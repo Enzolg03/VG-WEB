@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+header div{
+    width: 75%;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    color: white;
+}
+
+input{
+    width: 80%;
+    height: 40px;
+    border: black 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+form{
+    width: 60%;
+    position: relative;
+    height: 85px;
+}
+form>button>img {
+    width: 30px;
+    padding: 0;
+    margin: 0;
+}
+form>button {
+    margin-left: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+}
+
+.logo{
+    width: 350px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(13, 44, 63);
+}
+nav ul{
+    list-style-type: none;
+}
+nav>ul{
+    display: flex;
+}
+nav>ul>li{
+    width: 25%;
+    position: relative;
+}
+nav>ul>li>ul {
+    display: none;
+    background-color: rgb(41, 128, 185);
+    position: absolute;
+    left: 10%;
+    width: 80%;
+}
+
+nav>ul>li>ul>li{
+    border-bottom: 2px solid white;
+}
+nav>ul>li:hover>ul {
+    display: block;
+}
+nav>ul>li>a{
+    border-radius: 30px;
+    background-color: rgb(33,97,140);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.cam{
+    position:absolute;
+    left: 100%;
+    width: 70%;
+    background-color: rgb(41, 128, 185);
+    display: none;
+    top: 10%;
+}
+
+.cam>li{
+    border-bottom: 2px solid white;
+}
+
+.pro:hover>.cam{
+    display: block;
+}
+
+.tipan{
+    position:absolute;
+    left: 100%;
+    width: 100%;
+    background-color: rgb(41, 128, 185);
+    display: none;
+    top: 10%;
+}
+
+.tipan>li{
+    border-bottom: 2px solid white;
+}
+
+.an:hover>.tipan{
+    display: block;
+}
+
+.tipip{
+    position:absolute;
+    left: 100%;
+    width: 100%;
+    background-color: rgb(41, 128, 185);
+    display: none;
+    top: 50%;
+}
+
+.tipip>li{
+    border-bottom: 2px solid white;
+}
+
+.ip:hover>.tipip{
+    display: block;
+}
+
+.tipac{
+    position:absolute;
+    left: 100%;
+    width: 100%;
+    background-color: rgb(41, 128, 185);
+    display: none;
+    top: 80%;
+}
+
+.tipac>li{
+    border-bottom: 2px solid white;
+}
+
+.ac:hover>.tipac{
+    display: block;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color:rgba(0, 0, 0, 0.301) ;
+    text-decoration: underline;
+}
+nav>ul>li>a:hover{
+    background-color:rgba(0, 0, 0, 0.301) ;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main section {
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+#tres{
+    width: 100%;
+    height: 450px;
+    padding: 20px 0px;
+    background-color: rgb(13, 44, 63);
+}
+footer{
+    width: 100%;
+    background-color: rgb(41, 128, 185);
+    display: flex;
+}
+footer div{
+    width: 33%;
+}
+footer h1{
+    color: white;
+    padding: 10px 5% 0px;
+}
+footer img{
+    width: 60px;
+    height: 60px;
+    margin: 20px 0px;
+    margin-left: 5%;
+}
+footer p{
+    color: white;
+    font-size: 20px;
+    padding: 10px 5% 0px;
+}
+
+.er{
+    width: 90%;
+    margin-left: 3%;
+    margin-right: 7%;
+    padding: 30px;
+}
+.er .error{
+    font-size: 30px;
+    text-align: center;
+}
+
+.libro{
+    width: 50%;
+    height: 50%;
+}
+
+.a:hover{
+    background-color: rgb(76, 76, 97);
+    border: 3px solid white;
+    color: white;
+}
+
+
+.card{
+    width: 22%;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px  rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-bottom: 0.5px solid rgba(0,0,0,0.4);
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1;
+    color: #6a6a6a;
+    margin: 10px;
+}
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
